@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Travel-Japan</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            background-image: url(jpimg.webp);
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            background-position: -150px -150px;
+            
+
+        }
+
+        .container {
+            background-color: rgba(255, 255, 255, 0.2);
+            width: max-content;
+            padding: 40px 80px;
+            color: white;
+            position: relative;
+            top: 200px;
+            left: 200px;
+            border-radius: 50px;
+            box-shadow: 5px 5px 40px 10px rgba(255, 255, 255, 0.3);
+        }
+
+        label {
+            display: inline-block;
+            margin-right: 9px;
+            padding: 5px 0;
+
+            font-family: sans-serif;
+            box-sizing: border-box;
+            font-weight: 500;
+            font-size: 1.1rem;
+
+        }
+
+        input {
+            display: inline-block;
+            padding: 7px 2px;
+            margin: 2px 0 8px 0;
+            border-radius: 5px;
+            border: none;
+        }
+
+        .txt {
+            min-width: 300px;
+        }
+
+        .gender {
+            font-size: 1rem;
+            font-weight: normal;
+        }
+
+        .btn {
+            display: block;
+            background-color: rgb(221, 91, 113);
+            width: 150px;
+            margin: 20px auto;
+            border: 1px solid rgb(250, 172, 185);
+            color: white;
+            padding: 7px 10px !important;
+            border-radius: 9px;
+        }
+
+        .btn:hover {
+            cursor: pointer;
+            box-shadow: 0 2px 5px rgba(221, 91, 113, 0.9);
+        }
+
+        h1 {
+            margin-bottom: 10px;
+        }
+        
+
+        input:focus{
+            border: none;
+            outline: none;
+            box-shadow: 0px 5px 25px rgba(221, 91, 113, 0.9);
+
+        }
+
+        @media screen and (max-width: 480px) {
+            body {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                height: 100vh;
+                width: 100vw;
+                background-position: -500px -300px;
+            }
+
+            .container {
+            padding: 30px 30px;
+            width: max-content;
+            color: white;
+            position:unset;
+            border-radius: 10px;
+            display: block;
+            margin: auto;
+            
+            }
+
+            label {
+                font-size: 1rem;
+                padding: 2px 0;
+                font-family: sans-serif;
+                box-sizing: border-box;
+                font-weight: 300;
+            }
+            .txt {
+            min-width: 250px;
+        }
+
+            
+
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <h1>Register Here :</h1>
+        <form action="">
+            <label>First Name :</label> <br>
+            <input class="txt" type="text" placeholder="enter your name"> <br>
+
+            <label>Last Name :</label> <br>
+            <input class="txt" type="text" placeholder="enter your name"> <br>
+
+            <label>Gmail :</label> <br>
+            <input class="txt" type="email" placeholder="enter your mail id"> <br>
+
+            <label>Phone Number :</label> <br>
+            <input class="txt" type="number" placeholder="enter your Phone Number"> <br>
+
+            <label>Date :</label> <br>
+            <input class="txt" type="date"> <br>
+
+            <label>Gender :</label> <br>
+            <input type="radio" name="gender" id="">
+
+            <label class="gender">Male</label>
+            <input type="radio" name="gender" id="">
+            <label class="gender">Female</label>
+            <br>
+            <input class="btn" type="submit">
+        </form>
+    </div>
+</body>
+
+</html>
